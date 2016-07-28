@@ -39,7 +39,7 @@ Movie.destroy_all
 
 morgan = Actor.create first_name: 'Morgan', last_name: 'Freeman'
 jim = Actor.create first_name: 'Jim', last_name: 'Carrey'
-kevin = Actor.create first_name: 
+kevin = Actor.create first_name: 'Kevin', last_name: 'Bacon'
 
 planes = Movie.create title: 'Planes, Trains, and Automobiles', description: 'Comedy', year: 1987
 spider = Movie.create title: 'Along came a spider', description: 'Thriller', year: 2001
@@ -55,7 +55,7 @@ jim.movies << cable
 kevin.movies << apollo_13
 ```
 
-### Sprint 3
+### Sprint 2
 
 Create two routes ``movies`` and ``actors``. In the movies route, include all of the movies all with the first and last name
 of any actor who was in the movie. For the actors route include all of the actors and list each movie the actor was in.
@@ -64,7 +64,7 @@ of any actor who was in the movie. For the actors route include all of the actor
 
 * Implement show for actors and movies
 * Enable a user to use add a new actor to a movie. Enable a user to add a new movie to an actor. Think about how you would use 
-other imput types, ``<selection>`` cough, cough, to help maintain the data consitence of this action.
+other input types, ``<selection>`` cough, cough, to help maintain the data consitence of this action.
 
 ## Useful Docs
 
